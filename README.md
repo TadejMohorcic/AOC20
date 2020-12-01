@@ -1,2 +1,4 @@
 # AOC20
-Repository created for Advent of Code 2020.
+Repozitorij, v katerem bom sodeloval pri projektu Advent of Code, delal pa bom v programu [OCaml](https://ocaml.org/). 
+
+Koda je najdena v mapi solutions, rešitive pa v maki out.
