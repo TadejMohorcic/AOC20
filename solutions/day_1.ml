@@ -21,7 +21,7 @@ module List = struct
   let lines = String.split_on_char '\n'
 end
 
-(*---------------------------------------- dejanske funkcije ----------------------------------------*)
+(*-------------------------------------------- moja koda --------------------------------------------*)
 
 let int_to_int z = match z with 
     | Some x -> x
@@ -53,7 +53,7 @@ let naloga2 data =
   let lines = List.lines data in
   lines |> List.int_list |> najdi_tri 2020 |> int_to_int |> string_of_int
 
-(*--------------------------------- funkcije se poganjajo tu spodaj ---------------------------------*)
+(*----------------------------------- koda se poganjajo tu spodaj -----------------------------------*)
 
 let main () =
   let podatki = preberi_datoteko ("data/day_1.in") in
