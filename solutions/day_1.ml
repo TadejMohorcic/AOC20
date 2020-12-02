@@ -1,4 +1,6 @@
-(* Nekaj od teh funkcij je "izposojenih" iz repozitorija našega asistenta Filipa Koprivca, in sicer iz datoteke project_windows.ms (predvsem module list ter nekateri del zadnje funkcije) *)
+(* Nekaj od teh funkcij je izposojenih iz repozitorija našega asistenta Filipa Koprivca, in sicer iz datoteke project_windows.ms *)
+
+(*---------------------------------------- pomozne funkcije ----------------------------------------*)
 
 let preberi_datoteko ime_datoteke =
   let chan = open_in ime_datoteke in
@@ -19,7 +21,7 @@ module List = struct
   let lines = String.split_on_char '\n'
 end
 
-(*----------------------------------------------------------------------------------------------------*)
+(*---------------------------------------- dejanske funkcije ----------------------------------------*)
 
 let int_to_int z = match z with 
     | Some x -> x
@@ -51,7 +53,7 @@ let naloga2 data =
   let lines = List.lines data in
   lines |> List.int_list |> najdi_tri 2020 |> int_to_int |> string_of_int
 
-(* funkcije se poganjajo tu spodaj *)
+(*--------------------------------- funkcije se poganjajo tu spodaj ---------------------------------*)
 
 let main () =
   let podatki = preberi_datoteko ("data/day_1.in") in
